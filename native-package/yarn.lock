@@ -1158,9 +1158,9 @@ acorn-jsx@^5.0.1:
   integrity sha512-HiUX/+K2YpkpJ+SzBffkM/AQ2YE03S0U1kjTLVpoJdhZMOWy8qvXVN9JdLqv2QsaQ6MPYQIuNmwD8zOiYUofLQ==
 
 acorn@^6.1.1, acorn@^6.2.1:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
@@ -6254,10 +6254,10 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
-stream-chat-react-native-core@v0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/stream-chat-react-native-core/-/stream-chat-react-native-core-0.7.0.tgz#94ebe769a86ce32d0d23f0d2d712656443c746b3"
-  integrity sha512-XJwNrnOO/vffT8ujzd076rCCxu9rmNE3Fhe/grp7WmERIIp0CKxwfXoWTBh1gO5DPlkrV7QYBYeZM1kLWc052w==
+stream-chat-react-native-core@v0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/stream-chat-react-native-core/-/stream-chat-react-native-core-0.7.1.tgz#6b750e5926afa1b08d32692227efd505cd1bca20"
+  integrity sha512-ORF1yYVafsqKnO0M+ThSIp3rFNoqAmBQjxERgh68umlP55N7NlIHd/ozT66iOM1HQWp1tjj74to8ISDMQiQmxA==
   dependencies:
     "@babel/runtime" "^7.1.2"
     "@stream-io/react-native-simple-markdown" "^1.1.1"
