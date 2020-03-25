@@ -4,6 +4,7 @@ import { withChannelContext, withTranslationContext } from '../context';
 import styled from '@stream-io/styled-components';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
+import dayjs from 'dayjs';
 
 import { Message } from './Message';
 import { EventIndicator } from './EventIndicator';
@@ -412,8 +413,21 @@ class MessageList extends PureComponent {
           groupStyles.splice(0, groupStyles.length);
           groupStyles.push('single');
         } else {
-          groupStyles.splice(0, groupStyles.length);
-          groupStyles.push('middle');
+          if (message && nextMessage) {
+            const messageDate = dayjs(message.created_at);
+            const nextMessageDate = dayjs(nextMessage.created_at);
+            const differenceInMs = nextMessageDate.diff(messageDate);
+            if (differenceInMs / 1000 > 120) {
+              // 2 mins
+              groupStyles.push('bottom');
+            } else {
+              groupStyles.splice(0, groupStyles.length);
+              groupStyles.push('middle');
+            }
+          } else {
+            groupStyles.splice(0, groupStyles.length);
+            groupStyles.push('middle');
+          }
         }
       }
 
